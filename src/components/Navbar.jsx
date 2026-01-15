@@ -1,22 +1,24 @@
 import React from 'react'
 import { Menu } from 'lucide-react';
+import { Chromium } from 'lucide-react';
+
 
 
 function Navbar() {
   return (
-    <nav>
-        <div>
+    <nav className='px-4 py-3 bg-gray-900 text-white'>
+        <div className='max-w-7xl mx-auto flex justify-between items-center'>
 
             {/* Logo */}
-            <h1>My Logo</h1>
+                <Chromium />
 
             {/* Desktop Menu */}
 
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+            <ul className='hidden md:flex gap-6'>
+                <li className='cursor-pointer hover:text-yellow-400'>Home</li>
+                <li className='cursor-pointer hover:text-yellow-700'>About</li>
+                <li className='cursor-pointer hover:text-amber-400'>Services</li>
+                <li className='cursor-pointer hover:text-amber-500'>Contact</li>
             </ul>
 
             {/* Mobile Button */}
